@@ -1,0 +1,36 @@
+{
+  "snapshot_id": "2026-07-29-1600",
+  "generated_at": "2026-07-29T16:36:16-07:00",
+  "timezone": "America/Phoenix",
+  "type": "initial_baseline",
+  "target": "https://insurancy.com/",
+  "metrics": {
+    "pages_fetched": 1400,
+    "internal_link_instances": 39380,
+    "broken_internal_link_instances": 1,
+    "external_targets_checked": 379,
+    "unique_external_404_targets": 30,
+    "external_404_link_instances": 52,
+    "rate_routes_smoke_tested": 12,
+    "open_tickets": 8,
+    "screenshots_preserved": 19
+  },
+  "priorities": {
+    "P0": 1,
+    "P1": 4,
+    "P2": 2,
+    "P3": 1
+  },
+  "changes": {
+    "new": [],
+    "changed": [],
+    "resolved": [],
+    "regressions": []
+  },
+  "artifacts": {
+    "report": "../README.md",
+    "audit_json": "../data/production-audit.json",
+    "tickets": "../tickets.csv",
+    "external_404_csv": "../data/external-404-links.csv"
+  }
+}

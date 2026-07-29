@@ -1,0 +1,9 @@
+id,priority,title,status,evidence
+INS-001,P0,Replace legacy quote links that open 404 pages,production-confirmed,data/external-404-links.csv
+INS-002,P1,Repair the broken iROI link and incorrect 404 metadata,production-confirmed,screenshots/broken-iroi-404.png
+INS-003,P1,Render zero-cent quote prices with two decimal places,production-confirmed,screenshots/mobile-banner-price-format.png
+INS-004,P1,Stop the Ameritas logo from opening the Ethos review,production-confirmed,screenshots/ameritas-logo-wrong-destination.png
+INS-005,P1,Add accessible names and selection state to quote controls,production-confirmed,screenshots/mobile-quote-fields-390x844.png
+INS-006,P2,Correct the quote form initial 3/4 complete progress,production-confirmed,screenshots/mobile-quote-form-centered-390x844.png
+INS-007,P2,Repair or remove confirmed external 404 links,production-confirmed,data/external-404-links.csv
+INS-008,P3,Fix missing page and image semantics,production-confirmed,data/production-audit.json

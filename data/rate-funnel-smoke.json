@@ -1,0 +1,201 @@
+[
+  {
+    "requested": "https://rates.insurancy.com/custom/quiz/quizv5?skip_contact=1",
+    "finalUrl": "https://rates.insurancy.com/custom/quiz/quizv5?skip_contact=1",
+    "elapsedMs": 1487,
+    "title": "Insurancy",
+    "headings": [
+      "- heading \"What state do you live in?\" [level=1]"
+    ],
+    "buttons": [
+      "- button \"Next step\":",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 619,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quiz/insurance-type-v2/",
+    "finalUrl": "https://rates.insurancy.com/custom/quiz/insurance-type-v2/",
+    "elapsedMs": 1261,
+    "title": "Insurancy",
+    "headings": [
+      "- heading \"What are your goals for life insurance?\" [level=1]"
+    ],
+    "buttons": [
+      "- button \"Protect my loved ones\":",
+      "- button \"Replace my income\":",
+      "- button \"Cover funeral expenses\":",
+      "- button \"Pay off debts\":",
+      "- button \"Leave an inheritance\":",
+      "- button \"Build cash value\":",
+      "- button \"I'm not sure yet\":",
+      "- button \"Next\" [disabled]:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 1275,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/term/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/term/",
+    "elapsedMs": 2020,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/no-exam/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/no-exam/",
+    "elapsedMs": 2047,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/universal/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/universal/",
+    "elapsedMs": 2138,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/living-benefits/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/living-benefits/",
+    "elapsedMs": 2243,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/guaranteed/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/guaranteed/",
+    "elapsedMs": 2018,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/accidental/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/accidental/",
+    "elapsedMs": 1926,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/whole-life/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/whole-life/",
+    "elapsedMs": 1932,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/final-expense/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/final-expense/",
+    "elapsedMs": 1994,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/instant/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/instant/",
+    "elapsedMs": 1818,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is your gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 686,
+    "error": null
+  },
+  {
+    "requested": "https://rates.insurancy.com/custom/quote/child/",
+    "finalUrl": "https://rates.insurancy.com/custom/quote/child/",
+    "elapsedMs": 2030,
+    "title": "Insurancy - Quote Details",
+    "headings": [
+      "- heading \"What is the child's gender?\" [level=1]"
+    ],
+    "buttons": [
+      "- button:",
+      "- button \"Finish later? Email me a link\":"
+    ],
+    "iframeExpanded": true,
+    "snapshotLength": 636,
+    "error": null
+  }
+]

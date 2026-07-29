@@ -1,0 +1,119 @@
+{
+  "title": "Insurancy production conversion QA evidence",
+  "audit_date": "2026-07-29",
+  "target": "https://insurancy.com/",
+  "repository": "https://github.com/GreenbergEnterprise/insurancy-qa-evidence-2026",
+  "raw_base_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main",
+  "complete_bundle": "https://github.com/GreenbergEnterprise/insurancy-qa-evidence-2026/releases/download/v2026.07.29/insurancy-qa-evidence.zip",
+  "summary": {
+    "urls_fetched": 1400,
+    "internal_link_instances": 39380,
+    "internal_404s": 1,
+    "unique_external_404s": 30,
+    "external_404_link_instances": 52,
+    "funnel_routes_loaded": 12,
+    "tickets": 8
+  },
+  "entry_points": {
+    "report": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/report/production-qa-report.md",
+    "ai_handoff": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/AI-HANDOFF.md",
+    "tickets_csv": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/tickets.csv",
+    "production_audit": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/data/production-audit.json"
+  },
+  "tickets": [
+    {
+      "id": "INS-001",
+      "priority": "P0",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-001-fix-legacy-quote-404s.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/legacy-quote-source-cancer.png",
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/broken-legacy-quote-404.png",
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/data/external-404-links.csv"
+      ]
+    },
+    {
+      "id": "INS-002",
+      "priority": "P1",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-002-fix-iroi-broken-link-and-404-metadata.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/broken-iroi-404.png",
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/data/internal-broken-links.csv"
+      ]
+    },
+    {
+      "id": "INS-003",
+      "priority": "P1",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-003-fix-truncated-zero-cent-prices.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-banner-price-format.png"
+      ]
+    },
+    {
+      "id": "INS-004",
+      "priority": "P1",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-004-fix-ameritas-logo-misroute.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/ameritas-logo-source.png",
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/ameritas-logo-wrong-destination.png"
+      ]
+    },
+    {
+      "id": "INS-005",
+      "priority": "P1",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-005-label-quote-and-results-controls.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-quote-fields-390x844.png",
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/desktop-policy-quiz-step2.png"
+      ]
+    },
+    {
+      "id": "INS-006",
+      "priority": "P2",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-006-correct-initial-quote-progress.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-quote-form-centered-390x844.png"
+      ]
+    },
+    {
+      "id": "INS-007",
+      "priority": "P2",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-007-clean-up-external-404-links.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/data/external-404-links.csv"
+      ]
+    },
+    {
+      "id": "INS-008",
+      "priority": "P3",
+      "ticket_url": "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/tickets/INS-008-fix-low-priority-page-semantics.md",
+      "evidence_urls": [
+        "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/data/production-audit.json"
+      ]
+    }
+  ],
+  "screenshots": [
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/ameritas-logo-source.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/ameritas-logo-wrong-destination.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/broken-iroi-404.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/broken-legacy-quote-404.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/desktop-home-hero.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/desktop-policy-quiz-step2.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/legacy-quote-source-cancer.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-application-contact-form-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-application-start-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-banner-price-format.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-home-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-life-menu-open-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-menu-open-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-quote-fields-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-quote-form-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/mobile-quote-form-centered-390x844.png",
+    "https://raw.githubusercontent.com/GreenbergEnterprise/insurancy-qa-evidence-2026/main/screenshots/quote-results-popup-441x897.png"
+  ],
+  "limits": [
+    "No real lead or final application was submitted.",
+    "No real session video was available.",
+    "Two debug or stitched screenshots were intentionally excluded.",
+    "External bot-blocked responses were not classified as confirmed dead links."
+  ]
+}

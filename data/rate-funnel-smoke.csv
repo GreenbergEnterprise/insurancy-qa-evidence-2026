@@ -1,0 +1,13 @@
+requested,final_url,title,first_heading,elapsed_ms,error
+https://rates.insurancy.com/custom/quiz/quizv5?skip_contact=1,https://rates.insurancy.com/custom/quiz/quizv5?skip_contact=1,Insurancy,"- heading ""What state do you live in?"" [level=1]",1487,
+https://rates.insurancy.com/custom/quiz/insurance-type-v2/,https://rates.insurancy.com/custom/quiz/insurance-type-v2/,Insurancy,"- heading ""What are your goals for life insurance?"" [level=1]",1261,
+https://rates.insurancy.com/custom/quote/term/,https://rates.insurancy.com/custom/quote/term/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",2020,
+https://rates.insurancy.com/custom/quote/no-exam/,https://rates.insurancy.com/custom/quote/no-exam/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",2047,
+https://rates.insurancy.com/custom/quote/universal/,https://rates.insurancy.com/custom/quote/universal/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",2138,
+https://rates.insurancy.com/custom/quote/living-benefits/,https://rates.insurancy.com/custom/quote/living-benefits/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",2243,
+https://rates.insurancy.com/custom/quote/guaranteed/,https://rates.insurancy.com/custom/quote/guaranteed/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",2018,
+https://rates.insurancy.com/custom/quote/accidental/,https://rates.insurancy.com/custom/quote/accidental/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",1926,
+https://rates.insurancy.com/custom/quote/whole-life/,https://rates.insurancy.com/custom/quote/whole-life/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",1932,
+https://rates.insurancy.com/custom/quote/final-expense/,https://rates.insurancy.com/custom/quote/final-expense/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",1994,
+https://rates.insurancy.com/custom/quote/instant/,https://rates.insurancy.com/custom/quote/instant/,Insurancy - Quote Details,"- heading ""What is your gender?"" [level=1]",1818,
+https://rates.insurancy.com/custom/quote/child/,https://rates.insurancy.com/custom/quote/child/,Insurancy - Quote Details,"- heading ""What is the child's gender?"" [level=1]",2030,
