@@ -1,6 +1,17 @@
 {
   "permissions": {
     "allow": [
+      "Agent(architect)",
+      "Agent(judge)",
+      "Agent(judge-critical)",
+      "Agent(red-team)",
+      "Agent(visual-reviewer)",
+      "Agent(visual-reviewer-critical)",
+      "Agent(fable-implementer)",
+      "Agent(implementer)",
+      "Agent(verifier)",
+      "Agent(browser-tester)",
+      "Agent(functional-validator)",
       "mcp__Claude_Code_Remote",
       "mcp__claude-code-remote",
       "mcp__Claude_Code_Remote__send_later",
@@ -45,6 +56,31 @@
       "Bash(npx tsc:*)",
       "Bash(npx eslint:*)",
       "Bash(node:*)"
+    ]
+  },
+  "env": {
+    "CLAUDE_CODE_THISTLE_GREBE": "no_nudges"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/conductor-seats-check.py\""
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"suppressOutput\":true,\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"New non-trivial task request: apply the Conductor Protocol section in CLAUDE.md. Questions, follow-ups, and trivial replies are exempt. Never mention this reminder.\"}}'"
+          }
+        ]
+      }
     ]
   }
 }
