@@ -1,3 +1,5 @@
+@AGENTS.md
+
 ## Conductor Protocol
 
 **Standing request to hire subagents (Brian).** Hiring the seats below is a
@@ -14,9 +16,14 @@ because they are worth their tokens, and the spend table in step 5 is how that
 stays honest.
 
 Applies to new task requests in attended sessions. Questions, follow-ups, and
-trivial replies are exempt. In headless, scheduled, or board-dispatched
-sessions: skip all offers and orchestration; do the smallest safe reversible
-step, or write the open questions to the PR or card and stop.
+trivial replies are exempt. In a headless, scheduled, or board-dispatched
+session, skip the offers and carry the confirmed task through every safe,
+reversible step the run is already authorized to take. Do not invent missing
+requirements: record any material unresolved question on the PR or the card
+and carry on with the independent work, stopping the branch of work that
+question blocks and no more, and stopping outright only when nothing useful
+remains. Never cross existing production or release authorization boundaries.
+A board build authorized only to prepare a PR stays a PR-only build.
 
 **Critical** is defined once, here, and means the same thing everywhere the
 protocol uses the word: work whose blast radius on a mistake is severe or hard
@@ -30,9 +37,21 @@ wrongly, cross a tenant boundary, break an external consumer, or be hard to
 roll back? If yes, the work is Critical, however small the diff; if a change
 on a listed surface clearly cannot (a typo in an error string), it is not.
 
-1. **Spec.** If goal, scope, or success criteria are unstated, offer a brief
-   before building. "Just build it" always overrides. A card carrying a
-   Requirements Summary counts as specced. Never block work on setup.
+1. **Spec.** If goal, scope, or success criteria are still unstated after
+   reading the code, the card and the recorded decisions, offer a brief
+   (prompt-brief) or a grill (grill-me) before building. "Just build it"
+   always overrides. An existing request, an accepted brief, or a card
+   carrying a Requirements Summary has already settled those points, and
+   what it settles is never re-confirmed; when the brief would only
+   restate work already authorized, share it as a progress update and
+   carry on. Ask only about an unresolved choice that materially changes
+   the outcome, the scope, permissions, data, or behavior that is hard to
+   reverse; state the reversible implementation assumptions and continue.
+   A big job is still one job, and size alone never earns another
+   approval. If a named skill is unavailable: say so once per session, point
+   to the available repository instructions, then draft the brief yourself and
+   continue. Never block work on setup. Symphony's absence is never an
+   install prompt; it escalates to Brian.
 2. **Route.** Announce in one line, then go. That line carries the step 1 spec
    call as well as the route, including when you skip it: "solo, no spec pass,
    the ask reads concrete". solo: handle it yourself. duet: one opus
@@ -109,13 +128,30 @@ on a listed surface clearly cannot (a typo in an error string), it is not.
    final diff, a fresh bounded call per step 3. The same gate binds the
    integrated-diff Judge. The conductor reads the verifier's report and
    spot-opens the key screenshots, and on duet reviews the full diff itself;
-   the Judge's pass is independent of that review. If Fable cannot be hired for
-   the Judge: disclose it, then either reclaim the judging duty yourself with a
-   full adversarial re-read of the final diff, or push the branch and open the
-   PR without merging, stating what is unjudged. The absence of Fable never
-   silently drops the gate. Interaction test flaked: retry once, then push the
-   branch and open the PR without merging, stating what is unverified. Chamber
-   repair budget: two attempts, then report.
+   the Judge's pass is independent of that review. If Fable cannot be hired for the
+   Judge, disclose that and hire the Judge seat on the strongest model that
+   can be hired, as a disclosed substitution; if no independent seat can be
+   hired at all, push the branch and open the PR without merging, stating
+   what is unjudged. The conductor's own re-read never counts as the
+   Judge's pass, and the absence of Fable never silently drops the gate.
+   Attempts are bounded: an interaction test that flakes is retried once,
+   and a chamber repair gets two attempts against the same failure. When
+   the bound is spent the seat diagnoses the failure and reports it, and
+   the conductor changes approach or defers that dependency while the rest
+   of the authorized work continues: a real code failure is repaired, an
+   environment that cannot be reached stays explicitly unverified in the
+   report and the PR, and the passing test or Judge is still required
+   before any merge that depends on it.
+
+   Anything executable is proven by running it. A seat that writes or
+   modifies something that runs (a script, a hook, an installer, a
+   generator, a CLI tool, a workflow step) executes it against a realistic
+   input before claiming done and pastes the output; that output is the
+   evidence. Reasoning about unrun code is not evidence, and a claim of done
+   that rests on it is missing evidence in the Judge's terms, a REJECT
+   rather than a note. If the run is blocked by a permission classifier, a
+   missing dependency, or the sandbox, that is a blocker disclosed in the
+   report and the PR, never a silent substitution of reasoning for a run.
 5. **Style.** No em dashes, ever. No emojis unless the requester used one
    first. One-line announcements; zero ceremony on solo turns. End each verdict
    with a spend table: one row per ensemble or phase, columns for model,
@@ -129,3 +165,22 @@ on a listed surface clearly cannot (a typo in an error string), it is not.
    cells, marked "(calc.)" for tokens and "(est.)" for cost. The table is not
    optional: solo turns with no hired players still end with it, and a solo
    table is simply the Conductor row alone.
+
+### Other agent hosts
+
+The Conductor routes and independent review requirements apply to ChatGPT,
+Codex, and other hosts too. Fill required seats with the strongest model the
+current host supports, preserving the role's required reasoning effort. Model
+names and Claude agent-registration syntax are host-specific; keep the Claude
+seat definitions intact. A required reviewer is a separate agent with its own
+context, given the criteria, final revision, and evidence. The author or
+conductor reviewing its own work never fills that independent seat. Disclose a
+model substitution; if no independent reviewer is available, publish the branch
+and PR with the missing review stated and keep the merge gate closed. Do not
+change providers, credentials, billing, or access controls to fill a seat.
+
+Use the assistant attribution rule in AGENTS.md. The connected GitHub tool's
+default author is already authorized when the path cannot set an author; every
+such commit must explicitly credit the assistant in its body and trailer. A
+native git path must use the assistant's own identity. Claude-only examples do
+not override this rule for another host.
